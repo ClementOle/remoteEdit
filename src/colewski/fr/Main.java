@@ -6,6 +6,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+/**
+ * Retire dans le fichier model.ts généré par OPEN API generator les models non-dto
+ */
 public class Main {
 
 
@@ -13,7 +16,7 @@ public class Main {
 
 
 		if (args.length < 2 || args[0] == null || args[1] == null) {
-			System.err.println("Erreur args");
+			System.err.println("Error: Two args required");
 			System.exit(21);
 		}
 
@@ -53,8 +56,6 @@ public class Main {
 
 
 			System.out.println("DONE !");
-		} catch (Exception e) {
-			System.err.println(e);
 		}
 
 
